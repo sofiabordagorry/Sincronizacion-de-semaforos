@@ -19,6 +19,32 @@ public class TrafficLightsProblem extends AbstractDoubleProblem{
 	@Override
 	public void evaluate(DoubleSolution solution) {
         try {
+		File inputFile = new File("RED-simulacionProbada.net.xml");
+        	DocumentBuilerFactory dbFactory = DocumentBuilderFactory.newInstance();
+        	DocumentBuilder dBuilder =  dbFactory.newDocumentBuilder();
+        	Document doc = dbBuilder.parse(inputFile);
+        		
+        	doc.getDocumentElement().normalize();
+        	
+        	NodeList semaforosList = doc.getElementsByTagName("tlLogic");
+        	
+        	for (int i = 0; i < semaforosList.getLength(); i++) {
+        		Node semaforo = semaforosList.item(i);
+        		if(semaforo.getNodeType() == Node.ELEMENT_NODE) {
+        			Element elemSemaforo = (Element) semaforo;
+        			String semaforoID = elemSemaforo.getAttribute("id");
+        			Semaforo semaforoSolucion  = buscarSemaforo(semaforoID);
+        			int[] fasesSemaforoSolucion = semaforoSolucion.getFases();
+        			NodeList fasesList = elemSemaforo.getElementsByTagName("phase");
+        			for(int j = 0; j < fasesList.getLength(); j++) {
+        				Element fase = (Element) fasesList.item(j);
+        				String estadoFase = fase.getAttribute("state");
+        				if(estadoFase.contains("G")) {
+        					fase.setAttribute("duracion", fasesSemaforoSolucion[j]);
+        				}
+        			}
+        		}	
+        	}
             ProcessBuilder processBuilder = new ProcessBuilder("python", "C:\\Users\\PC\\Desktop\\Laboratorio\\velocidadPromedio.py");
             processBuilder.redirectOutput(new File("output.txt"));
             Process process = processBuilder.start();
