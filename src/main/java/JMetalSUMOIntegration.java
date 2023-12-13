@@ -4,45 +4,62 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.uma.jmetal.algorithm.Algorithm;
-import org.uma.jmetal.operator.crossover.CrossoverOperator;
-import org.uma.jmetal.operator.mutation.MutationOperator;
-import org.uma.jmetal.problem.Problem;
-import org.uma.jmetal.solution.doublesolution.DoubleSolution;
-
 public class JMetalSUMOIntegration {
-	public static void main(String[] args) {
-		//Problem<DoubleSolution> problem = new TrafficLightsProblem(phaseDurations, offsets);
-		int maxGenerations = 500;
-		
-		List<DoubleSolution> initialPopulation = new ArrayList<>();
-		
+    public static void main(String[] args) {
+        int maxGenerations = 500;
 
-		for(int i = 0; i < 100;i++) {
-			Semaforo[] semaforosList = new Semaforo[100];
-			try (BufferedReader br = new BufferedReader(new FileReader("semaforos.txt"))) {//quizas la direccion sea incorrecta
-	            String line;
-	            int j = 0;
-	            while ((line = br.readLine()) != null) {
-	            		semaforosList[j].setId(line);
-	            		j++;
-	            }
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	        }
-			
-			//A cada problema habria que agregarle fases y offsets iniciales creados de manera random
-			TrafficLightsProblem solution = new TrafficLightsProblem(semaforosList);
-			
-			initialPopulation.add((DoubleSolution) solution);
-		}
-		
-		Algorithm<DoubleSolution> algorithm = new GeneticAlgorithm(//Se crea el algoritmo con el problema, operador de cruce y mutacion
-				initialPopulation,
-				maxGenerations
-		);
-		algorithm.run();
-		DoubleSolution bestSolution = algorithm.getResult();
+        List<DoubleSolution> initialPopulation = new ArrayList<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader("archivo_generado.txt"))) {
+            String line;
+            List<Semaforo> semaforosList = new ArrayList<>();
+
+            while ((line = br.readLine()) != null) {
+                if (line.trim().isEmpty()) {
+                    // Fin de una instancia, verifica si hay exactamente 100 semáforos
+                    if (semaforosList.size() == 100) {
+                        TrafficLightsProblem problem = new TrafficLightsProblem(
+                                semaforosList.toArray(new Semaforo[0])
+                        );
+                        initialPopulation.add(problem);
+                    }
+                    semaforosList.clear();
+                } else {
+                    // Continuar leyendo semáforos
+                    Semaforo semaforo = parseSemaforoFromLine(line);
+                    semaforosList.add(semaforo);
+                }
+            }
+
+            // Agregar la última instancia si no termina con línea vacía y tiene 100 semáforos
+            if (!semaforosList.isEmpty() && semaforosList.size() == 100) {
+                TrafficLightsProblem problem = new TrafficLightsProblem(
+                        semaforosList.toArray(new Semaforo[0])
+                );
+                initialPopulation.add(problem);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        Algorithm<DoubleSolution> algorithm = new GeneticAlgorithm(
+                initialPopulation,
+                maxGenerations
+        );
+        algorithm.run();
+        DoubleSolution bestSolution = algorithm.getResult();
+    }
+
+    private static Semaforo parseSemaforoFromLine(String line) {
+        String[] parts = line.split(";");
+        String id = parts[0];
+        String[] fasesArray = parts[1].split(",");
+        int[] fases = new int[fasesArray.length];
+        for (int i = 0; i < fasesArray.length; i++) {
+            fases[i] = Integer.parseInt(fasesArray[i]);
+        }
+        int offset = Integer.parseInt(parts[2]);
+
+        return new Semaforo(id, fases, offset);
     }
 }
-
