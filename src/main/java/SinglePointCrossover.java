@@ -1,10 +1,11 @@
-import org.uma.jmetal.operator.CrossoverOperator;
-import org.uma.jmetal.solution.DoubleSolution;
+import org.uma.jmetal.operator.crossover.CrossoverOperator;
+import org.uma.jmetal.solution.doublesolution.DoubleSolution;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 
+@SuppressWarnings("serial")
 public class SinglePointCrossover implements CrossoverOperator<DoubleSolution> {
 
-    private double crossoverProbability;
+	private double crossoverProbability;
     private JMetalRandom randomGenerator;
 
     public SinglePointCrossover(double probability) {
@@ -39,9 +40,9 @@ public class SinglePointCrossover implements CrossoverOperator<DoubleSolution> {
             DoubleSolution child2 = (DoubleSolution) parent2.copy();
 
             for (int i = crossoverPoint; i < vectorLength; i++) {
-                double temp = child1.getVariableValue(i);
-                child1.setVariableValue(i, child2.getVariableValue(i));
-                child2.setVariableValue(i, temp);
+                double temp = child1.getVariable(i);
+                child1.setVariable(i, child2.getVariable(i));
+                child2.setVariable(i, temp);
             }
 
             java.util.List<DoubleSolution> offspring = new java.util.ArrayList<>();
@@ -52,4 +53,9 @@ public class SinglePointCrossover implements CrossoverOperator<DoubleSolution> {
             return parents; // No se aplica el cruzamiento
         }
     }
+
+	@Override
+	public double getCrossoverProbability() {
+		return 0;
+	}
 }

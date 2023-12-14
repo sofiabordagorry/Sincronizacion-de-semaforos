@@ -33,7 +33,7 @@ def generar_archivo_salida(archivo_entrada, num_instancias):
                 nueva_linea = generar_instancia(linea_original)
                 if nueva_linea is not None:
                     file_salida.write(nueva_linea + '\n')
-            file_salida.write('\n')  # Agregar salto de línea entre instancias
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
