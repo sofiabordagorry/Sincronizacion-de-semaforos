@@ -13,7 +13,8 @@ def generar_instancia(linea):
     suma_total_fases = int(partes[2])
 
     # Generar duraciones de fases
-    duraciones_fases = [random.randint(1, suma_total_fases - num_fases + 1) for _ in range(num_fases - 1)]
+    #duraciones_fases = [random.randint(5, suma_total_fases - num_fases + 1) for _ in range(num_fases - 1)]
+    duraciones_fases = [random.randint(10, min(suma_total_fases - 10, suma_total_fases - num_fases + 1)) for _ in range(num_fases - 1)]
     duraciones_fases.append(suma_total_fases - sum(duraciones_fases))
 
     # Ajustar a valores positivos

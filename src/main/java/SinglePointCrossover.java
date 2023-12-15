@@ -1,9 +1,11 @@
+import java.util.List;
+
 import org.uma.jmetal.operator.crossover.CrossoverOperator;
-import org.uma.jmetal.solution.doublesolution.DoubleSolution;
+import org.uma.jmetal.solution.integersolution.IntegerSolution;
 import org.uma.jmetal.util.pseudorandom.JMetalRandom;
 
 @SuppressWarnings("serial")
-public class SinglePointCrossover implements CrossoverOperator<DoubleSolution> {
+public class SinglePointCrossover implements CrossoverOperator<IntegerSolution> {
 
 	private double crossoverProbability;
     private JMetalRandom randomGenerator;
@@ -23,39 +25,42 @@ public class SinglePointCrossover implements CrossoverOperator<DoubleSolution> {
         return 2; // Genera 2 hijos
     }
 
-    @Override	
-    public java.util.List<DoubleSolution> execute(java.util.List<DoubleSolution> parents) {
-        if (parents.size() != 2) {
+	@Override
+	public double getCrossoverProbability() {
+		return 0;
+	}
+
+	@Override
+	public List<IntegerSolution> execute(List<IntegerSolution> parents) {
+		if (parents.size() != 2) {
             throw new IllegalArgumentException("Se necesitan exactamente 2 padres para el cruzamiento");
         }
 
         if (randomGenerator.nextDouble() < crossoverProbability) {
-            DoubleSolution parent1 = parents.get(0);
-            DoubleSolution parent2 = parents.get(1);
+            IntegerSolution parent1 = parents.get(0);
+            IntegerSolution parent2 = parents.get(1);
 
             int vectorLength = parent1.getNumberOfVariables();
-            int crossoverPoint = randomGenerator.nextInt(0, vectorLength - 1);
+            int crossoverPoint;
+            do {
+                crossoverPoint = randomGenerator.nextInt(0, vectorLength - 1);
+            } while (crossoverPoint % 3 != 0);
 
-            DoubleSolution child1 = (DoubleSolution) parent1.copy();
-            DoubleSolution child2 = (DoubleSolution) parent2.copy();
+            IntegerSolution child1 = (IntegerSolution) parent1.copy();
+            IntegerSolution child2 = (IntegerSolution) parent2.copy();
 
             for (int i = crossoverPoint; i < vectorLength; i++) {
-                double temp = child1.getVariable(i);
+                int temp = child1.getVariable(i);
                 child1.setVariable(i, child2.getVariable(i));
                 child2.setVariable(i, temp);
             }
 
-            java.util.List<DoubleSolution> offspring = new java.util.ArrayList<>();
+            java.util.List<IntegerSolution> offspring = new java.util.ArrayList<>();
             offspring.add(child1);
             offspring.add(child2);
             return offspring;
         } else {
             return parents; // No se aplica el cruzamiento
         }
-    }
-
-	@Override
-	public double getCrossoverProbability() {
-		return 0;
 	}
 }
