@@ -3820,183 +3820,143 @@
         <lane id="E14_0" index="0" length="3.34" shape="574464.67,-3862884.10 574464.31,-3862880.78" speed="13.89"/>
     </edge>
 
-    <tlLogic id="18julio-andes" offset="57" programID="0" type="static">
+    <tlLogic id="18julio-andes" offset="58" programID="0" type="static">
         <phase duration="3" state="yyyr"/>
         <phase duration="2" state="rrrr"/>
-        <phase duracion="26" duration="26" state="rrrG"/>
+        <phase duracion="28" duration="26" state="rrrG"/>
         <phase duration="3" state="rrry"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="31" duration="31" state="GGGr"/>
+        <phase duracion="29" duration="31" state="GGGr"/>
     </tlLogic>
-    <tlLogic id="18julio-barbato" offset="7" programID="0" type="static">
+    <tlLogic id="18julio-barbato" offset="54" programID="0" type="static">
         <phase duration="3" state="yyyy"/>
         <phase duration="2" state="rrrr"/>
-        <phase duracion="21" duration="26" state="GGGG"/>
+        <phase duracion="24" duration="26" state="GGGG"/>
         <phase duration="3" state="yyyy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="36" duration="31" state="GGGG"/>
+        <phase duracion="33" duration="31" state="GGGG"/>
     </tlLogic>
-    <tlLogic id="18julio-convencion" offset="60" programID="0" type="static">
+    <tlLogic id="18julio-convencion" offset="49" programID="0" type="static">
         <phase duration="3" state="yyyyyrrr"/>
         <phase duration="2" state="rrrrrrrr"/>
-        <phase duracion="25" duration="26" state="rrrrrGGG"/>
+        <phase duracion="35" duration="26" state="rrrrrGGG"/>
         <phase duration="3" state="rrrrryyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="32" duration="31" state="GGGGGrrr"/>
+        <phase duracion="22" duration="31" state="GGGGGrrr"/>
     </tlLogic>
-    <tlLogic id="18julio-cuareim" offset="17" programID="0" type="static">
+    <tlLogic id="18julio-cuareim" offset="58" programID="0" type="static">
         <phase duration="3" state="yyyyyrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="34" duration="26" state="rrrrrGGG"/>
+        <phase duracion="48" duration="26" state="rrrrrGGG"/>
         <phase duration="3" state="rrrrryyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="24" duration="32" state="GGGGGrrr"/>
+        <phase duracion="10" duration="32" state="GGGGGrrr"/>
     </tlLogic>
-    <tlLogic id="18julio-ejido" offset="42" programID="0" type="static">
+    <tlLogic id="18julio-ejido" offset="27" programID="0" type="static">
         <phase duration="3" state="yyyrrrrryy"/>
         <phase duration="2" state="rrrrrrrrrr"/>
-        <phase duracion="44" duration="26" state="rrrGGGGGrr"/>
+        <phase duracion="26" duration="26" state="rrrGGGGGrr"/>
         <phase duration="3" state="rrryyyyyrr"/>
         <phase duration="1" state="rrrrrrrrrr"/>
-        <phase duracion="13" duration="31" state="GGGrrrrrGG"/>
+        <phase duracion="31" duration="31" state="GGGrrrrrGG"/>
     </tlLogic>
-    <tlLogic id="18julio-herrerayobes" offset="2" programID="0" type="static">
+    <tlLogic id="18julio-herrerayobes" offset="43" programID="0" type="static">
         <phase duration="3" state="yyyyyrrr"/>
         <phase duration="2" state="rrrrrrrr"/>
-        <phase duracion="29" duration="26" state="rrrrrGGG"/>
+        <phase duracion="47" duration="26" state="rrrrrGGG"/>
         <phase duration="3" state="rrrrryyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="28" duration="31" state="GGGGGrrr"/>
+        <phase duracion="10" duration="31" state="GGGGGrrr"/>
     </tlLogic>
-    <tlLogic id="18julio-paraguay" offset="7" programID="0" type="static">
+    <tlLogic id="18julio-paraguay" offset="55" programID="0" type="static">
         <phase duration="3" state="yyyrrrryy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="32" duration="26" state="rrrGGGGrr"/>
+        <phase duracion="34" duration="26" state="rrrGGGGrr"/>
         <phase duration="3" state="rrryyyyrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="26" duration="32" state="GGGrrrrGG"/>
+        <phase duracion="24" duration="32" state="GGGrrrrGG"/>
     </tlLogic>
-    <tlLogic id="18julio-riobranco" offset="8" programID="0" type="static">
+    <tlLogic id="18julio-riobranco" offset="59" programID="0" type="static">
         <phase duration="3" state="yyyrrryy"/>
         <phase duration="2" state="rrrrrrrr"/>
-        <phase duracion="39" duration="26" state="rrrGGGrr"/>
+        <phase duracion="18" duration="26" state="rrrGGGrr"/>
         <phase duration="3" state="rrryyyrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="18" duration="31" state="GGGrrrGG"/>
+        <phase duracion="39" duration="31" state="GGGrrrGG"/>
     </tlLogic>
-    <tlLogic id="18julio-rionegro" offset="33" programID="0" type="static">
+    <tlLogic id="18julio-rionegro" offset="53" programID="0" type="static">
         <phase duration="3" state="yyyyyrrrr"/>
         <phase duration="2" state="rrrrrrrrr"/>
-        <phase duracion="36" duration="26" state="rrrrrGGGG"/>
+        <phase duracion="32" duration="26" state="rrrrrGGGG"/>
         <phase duration="3" state="rrrrryyyy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="21" duration="31" state="GGGGGrrrr"/>
+        <phase duracion="25" duration="31" state="GGGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="18julio-yaguaron" offset="65" programID="0" type="static">
+    <tlLogic id="18julio-yaguaron" offset="47" programID="0" type="static">
         <phase duration="3" state="yyyyyrrrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="17" duration="29" state="rrrrrGGGG"/>
+        <phase duracion="19" duration="29" state="rrrrrGGGG"/>
         <phase duration="3" state="rrrrryyyy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="41" duration="29" state="GGGGGrrrr"/>
+        <phase duracion="39" duration="29" state="GGGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="18julio-yi" offset="24" programID="0" type="static">
+    <tlLogic id="18julio-yi" offset="18" programID="0" type="static">
         <phase duration="3" state="yyyrrrryy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="14" duration="26" state="rrrGGGGrr"/>
+        <phase duracion="38" duration="26" state="rrrGGGGrr"/>
         <phase duration="3" state="rrryyyyrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="44" duration="32" state="GGGrrrrGG"/>
+        <phase duracion="20" duration="32" state="GGGrrrrGG"/>
     </tlLogic>
-    <tlLogic id="18yplaza(enriqueyadelareta)" offset="13" programID="0" type="static">
+    <tlLogic id="18yplaza(enriqueyadelareta)" offset="19" programID="0" type="static">
         <phase duration="3" state="ryyyy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="26" duration="26" state="Grrrr"/>
+        <phase duracion="17" duration="26" state="Grrrr"/>
         <phase duration="3" state="yrrrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="32" duration="32" state="rGGGG"/>
+        <phase duracion="41" duration="32" state="rGGGG"/>
     </tlLogic>
-    <tlLogic id="18yplaza(tarigoybaliñas)" offset="4" programID="0" type="static">
+    <tlLogic id="18yplaza(tarigoybaliñas)" offset="63" programID="0" type="static">
         <phase duration="3" state="yyyyrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="33" duration="26" state="rrrrGG"/>
+        <phase duracion="12" duration="26" state="rrrrGG"/>
         <phase duration="3" state="rrrryy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="25" duration="32" state="GGGGrr"/>
+        <phase duracion="46" duration="32" state="GGGGrr"/>
     </tlLogic>
-    <tlLogic id="caneleones-rionegro" offset="43" programID="0" type="static">
+    <tlLogic id="caneleones-rionegro" offset="26" programID="0" type="static">
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="48" duration="26" state="GGrr"/>
+        <phase duracion="38" duration="26" state="GGrr"/>
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="10" duration="32" state="rrGG"/>
+        <phase duracion="20" duration="32" state="rrGG"/>
     </tlLogic>
-    <tlLogic id="canelones-ejido" offset="30" programID="0" type="static">
+    <tlLogic id="canelones-ejido" offset="60" programID="0" type="static">
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="37" duration="29" state="GGrr"/>
+        <phase duracion="47" duration="29" state="GGrr"/>
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="21" duration="29" state="rrGG"/>
+        <phase duracion="11" duration="29" state="rrGG"/>
     </tlLogic>
-    <tlLogic id="canelones-paraguay" offset="60" programID="0" type="static">
+    <tlLogic id="canelones-paraguay" offset="55" programID="0" type="static">
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="38" duration="26" state="rrGG"/>
+        <phase duracion="15" duration="26" state="rrGG"/>
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="20" duration="32" state="GGrr"/>
+        <phase duracion="43" duration="32" state="GGrr"/>
     </tlLogic>
-    <tlLogic id="canelones-riobranco" offset="26" programID="0" type="static">
+    <tlLogic id="canelones-riobranco" offset="23" programID="0" type="static">
         <phase duration="3" state="ryy"/>
         <phase duration="1" state="rrr"/>
-        <phase duracion="25" duration="26" state="Grr"/>
+        <phase duracion="32" duration="26" state="Grr"/>
         <phase duration="3" state="yrr"/>
         <phase duration="1" state="rrr"/>
-        <phase duracion="33" duration="32" state="rGG"/>
+        <phase duracion="26" duration="32" state="rGG"/>
     </tlLogic>
-    <tlLogic id="cerrolargo-cuareim" offset="64" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="15" duration="26" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="43" duration="32" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="cerrolargo-ejido" offset="51" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="29" duration="23" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="29" duration="35" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="cerrolargo-lavalleja" offset="55" programID="0" type="static">
-        <phase duration="3" state="rrrrryyy"/>
-        <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="40" duration="29" state="GGGGGrrr"/>
-        <phase duration="3" state="yyyyyrrr"/>
-        <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="18" duration="29" state="rrrrrGGG"/>
-    </tlLogic>
-    <tlLogic id="cerrolargo-paraguay" offset="14" programID="0" type="static">
-        <phase duration="3" state="yyrrr"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="39" duration="23" state="rrGGG"/>
-        <phase duration="3" state="rryyy"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="19" duration="35" state="GGrrr"/>
-    </tlLogic>
-    <tlLogic id="cerrolargo-riobranco" offset="56" programID="0" type="static">
-        <phase duration="3" state="yyrr"/>
-        <phase duration="1" state="rrrr"/>
-        <phase duracion="23" duration="23" state="rrGG"/>
-        <phase duration="3" state="rryy"/>
-        <phase duration="1" state="rrrr"/>
-        <phase duracion="35" duration="35" state="GGrr"/>
-    </tlLogic>
-    <tlLogic id="cerrolargo-yaguaron" offset="40" programID="0" type="static">
+    <tlLogic id="cerrolargo-cuareim" offset="58" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
         <phase duracion="21" duration="26" state="rrrGGG"/>
@@ -4004,111 +3964,39 @@
         <phase duration="1" state="rrrrrr"/>
         <phase duracion="37" duration="32" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="cerrolargo-yi" offset="47" programID="0" type="static">
+    <tlLogic id="cerrolargo-ejido" offset="51" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="44" duration="20" state="rrrGGG"/>
+        <phase duracion="18" duration="23" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="14" duration="38" state="GGGrrr"/>
+        <phase duracion="40" duration="35" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="colonia-andes" offset="34" programID="0" type="static">
-        <phase duration="3" state="yyyrr"/>
+    <tlLogic id="cerrolargo-lavalleja" offset="0" programID="0" type="static">
+        <phase duration="3" state="rrrrryyy"/>
+        <phase duration="1" state="rrrrrrrr"/>
+        <phase duracion="18" duration="29" state="GGGGGrrr"/>
+        <phase duration="3" state="yyyyyrrr"/>
+        <phase duration="1" state="rrrrrrrr"/>
+        <phase duracion="40" duration="29" state="rrrrrGGG"/>
+    </tlLogic>
+    <tlLogic id="cerrolargo-paraguay" offset="56" programID="0" type="static">
+        <phase duration="3" state="yyrrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="20" duration="26" state="rrrGG"/>
-        <phase duration="3" state="rrryy"/>
+        <phase duracion="17" duration="23" state="rrGGG"/>
+        <phase duration="3" state="rryyy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="38" duration="32" state="GGGrr"/>
+        <phase duracion="41" duration="35" state="GGrrr"/>
     </tlLogic>
-    <tlLogic id="colonia-barbato" offset="46" programID="0" type="static">
-        <phase duration="3" state="yyr"/>
-        <phase duration="1" state="rrr"/>
-        <phase duracion="22" duration="23" state="rrG"/>
-        <phase duration="3" state="rry"/>
-        <phase duration="1" state="rrr"/>
-        <phase duracion="36" duration="35" state="GGr"/>
+    <tlLogic id="cerrolargo-riobranco" offset="13" programID="0" type="static">
+        <phase duration="3" state="yyrr"/>
+        <phase duration="1" state="rrrr"/>
+        <phase duracion="27" duration="23" state="rrGG"/>
+        <phase duration="3" state="rryy"/>
+        <phase duration="1" state="rrrr"/>
+        <phase duracion="31" duration="35" state="GGrr"/>
     </tlLogic>
-    <tlLogic id="colonia-barriosamorin" offset="1" programID="0" type="static">
-        <phase duration="3" state="yyyrr"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="10" duration="20" state="rrrGG"/>
-        <phase duration="3" state="rrryy"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="48" duration="38" state="GGGrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-convencion" offset="37" programID="0" type="static">
-        <phase duration="3" state="yyyrr"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="16" duration="26" state="rrrGG"/>
-        <phase duration="3" state="rrryy"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="42" duration="32" state="GGGrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-cuareim" offset="14" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="14" duration="26" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="44" duration="32" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-ejido" offset="18" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="26" duration="29" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="32" duration="29" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-florida" offset="56" programID="0" type="static">
-        <phase duration="3" state="yyyrr"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="20" duration="26" state="rrrGG"/>
-        <phase duration="3" state="rrryy"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="38" duration="32" state="GGGrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-herrerayobes" offset="32" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="27" duration="14" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="31" duration="44" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-paraguay" offset="65" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="26" duration="29" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="32" duration="29" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-riobranco" offset="13" programID="0" type="static">
-        <phase duration="3" state="yyyrr"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="26" duration="29" state="rrrGG"/>
-        <phase duration="3" state="rrryy"/>
-        <phase duration="1" state="rrrrr"/>
-        <phase duracion="32" duration="29" state="GGGrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-rionegro" offset="21" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="41" duration="26" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="17" duration="32" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-rondeau" offset="1" programID="0" type="static">
-        <phase duration="3" state="yyyrrr"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="32" duration="38" state="rrrGGG"/>
-        <phase duration="3" state="rrryyy"/>
-        <phase duration="1" state="rrrrrr"/>
-        <phase duracion="26" duration="20" state="GGGrrr"/>
-    </tlLogic>
-    <tlLogic id="colonia-yaguaron" offset="20" programID="0" type="static">
+    <tlLogic id="cerrolargo-yaguaron" offset="31" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
         <phase duracion="23" duration="26" state="rrrGGG"/>
@@ -4116,87 +4004,199 @@
         <phase duration="1" state="rrrrrr"/>
         <phase duracion="35" duration="32" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="colonia-yi" offset="7" programID="0" type="static">
+    <tlLogic id="cerrolargo-yi" offset="26" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="12" duration="23" state="rrrGGG"/>
+        <phase duracion="23" duration="20" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="46" duration="35" state="GGGrrr"/>
+        <phase duracion="35" duration="38" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="florida-mercedes" offset="41" programID="0" type="static">
+    <tlLogic id="colonia-andes" offset="52" programID="0" type="static">
+        <phase duration="3" state="yyyrr"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="48" duration="26" state="rrrGG"/>
+        <phase duration="3" state="rrryy"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="10" duration="32" state="GGGrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-barbato" offset="64" programID="0" type="static">
+        <phase duration="3" state="yyr"/>
+        <phase duration="1" state="rrr"/>
+        <phase duracion="45" duration="23" state="rrG"/>
+        <phase duration="3" state="rry"/>
+        <phase duration="1" state="rrr"/>
+        <phase duracion="13" duration="35" state="GGr"/>
+    </tlLogic>
+    <tlLogic id="colonia-barriosamorin" offset="38" programID="0" type="static">
+        <phase duration="3" state="yyyrr"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="22" duration="20" state="rrrGG"/>
+        <phase duration="3" state="rrryy"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="36" duration="38" state="GGGrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-convencion" offset="19" programID="0" type="static">
+        <phase duration="3" state="yyyrr"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="19" duration="26" state="rrrGG"/>
+        <phase duration="3" state="rrryy"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="39" duration="32" state="GGGrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-cuareim" offset="49" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="12" duration="26" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="46" duration="32" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-ejido" offset="60" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="33" duration="29" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="25" duration="29" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-florida" offset="22" programID="0" type="static">
+        <phase duration="3" state="yyyrr"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="17" duration="26" state="rrrGG"/>
+        <phase duration="3" state="rrryy"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="41" duration="32" state="GGGrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-herrerayobes" offset="14" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="34" duration="14" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="24" duration="44" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-paraguay" offset="58" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="21" duration="29" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="37" duration="29" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-riobranco" offset="28" programID="0" type="static">
+        <phase duration="3" state="yyyrr"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="40" duration="29" state="rrrGG"/>
+        <phase duration="3" state="rrryy"/>
+        <phase duration="1" state="rrrrr"/>
+        <phase duracion="18" duration="29" state="GGGrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-rionegro" offset="36" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="34" duration="26" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="24" duration="32" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-rondeau" offset="17" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="21" duration="38" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="37" duration="20" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-yaguaron" offset="24" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="27" duration="26" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="31" duration="32" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="colonia-yi" offset="61" programID="0" type="static">
+        <phase duration="3" state="yyyrrr"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="27" duration="23" state="rrrGGG"/>
+        <phase duration="3" state="rrryyy"/>
+        <phase duration="1" state="rrrrrr"/>
+        <phase duracion="31" duration="35" state="GGGrrr"/>
+    </tlLogic>
+    <tlLogic id="florida-mercedes" offset="13" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="18" duration="26" state="rrrrGGG"/>
+        <phase duracion="47" duration="26" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="40" duration="32" state="GGGGrrr"/>
+        <phase duracion="11" duration="32" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="galicia-ejido" offset="32" programID="0" type="static">
+    <tlLogic id="galicia-ejido" offset="34" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="34" duration="26" state="GGGrrr"/>
+        <phase duracion="21" duration="26" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="24" duration="32" state="rrrGGG"/>
+        <phase duracion="37" duration="32" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="galicia-lavalleja" offset="0" programID="0" type="static">
+    <tlLogic id="galicia-lavalleja" offset="31" programID="0" type="static">
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="27" duration="26" state="GGGGrrrr"/>
+        <phase duracion="13" duration="26" state="GGGGrrrr"/>
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="31" duration="32" state="rrrrGGGG"/>
+        <phase duracion="45" duration="32" state="rrrrGGGG"/>
     </tlLogic>
-    <tlLogic id="galicia-paraguay" offset="52" programID="0" type="static">
+    <tlLogic id="galicia-paraguay" offset="10" programID="0" type="static">
         <phase duration="3" state="yyrrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="16" duration="23" state="rrGGG"/>
+        <phase duracion="31" duration="23" state="rrGGG"/>
         <phase duration="3" state="rryyy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="42" duration="35" state="GGrrr"/>
+        <phase duracion="27" duration="35" state="GGrrr"/>
     </tlLogic>
-    <tlLogic id="galicia-riobranco" offset="63" programID="0" type="static">
+    <tlLogic id="galicia-riobranco" offset="60" programID="0" type="static">
         <phase duration="3" state="ry"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="22" duration="23" state="Gr"/>
+        <phase duracion="36" duration="23" state="Gr"/>
         <phase duration="3" state="yr"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="36" duration="35" state="rG"/>
+        <phase duracion="22" duration="35" state="rG"/>
     </tlLogic>
-    <tlLogic id="galicia-rondeau" offset="46" programID="0" type="static">
+    <tlLogic id="galicia-rondeau" offset="26" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="26" duration="17" state="GGGrrr"/>
+        <phase duracion="41" duration="17" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="32" duration="41" state="rrrGGG"/>
+        <phase duracion="17" duration="41" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="galicia-yaguaron" offset="33" programID="0" type="static">
+    <tlLogic id="galicia-yaguaron" offset="5" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="28" duration="17" state="rrrGGG"/>
+        <phase duracion="33" duration="17" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="30" duration="41" state="GGGrrr"/>
+        <phase duracion="25" duration="41" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="lapaz-cuareim" offset="4" programID="0" type="static">
+    <tlLogic id="lapaz-cuareim" offset="14" programID="0" type="static">
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="22" duration="23" state="rrGG"/>
+        <phase duracion="20" duration="23" state="rrGG"/>
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="36" duration="35" state="GGrr"/>
+        <phase duracion="38" duration="35" state="GGrr"/>
     </tlLogic>
-    <tlLogic id="lapaz-paraguay" offset="10" programID="0" type="static">
+    <tlLogic id="lapaz-paraguay" offset="64" programID="0" type="static">
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="39" duration="23" state="rrGG"/>
+        <phase duracion="33" duration="23" state="rrGG"/>
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="19" duration="35" state="GGrr"/>
+        <phase duracion="25" duration="35" state="GGrr"/>
     </tlLogic>
-    <tlLogic id="lapaz-rondeau" offset="28" programID="0" type="static">
+    <tlLogic id="lapaz-rondeau" offset="31" programID="0" type="static">
         <phase duration="3" state="yyrrr"/>
         <phase duration="1" state="rrrrr"/>
         <phase duracion="42" duration="23" state="rrGGG"/>
@@ -4212,413 +4212,413 @@
         <phase duration="1" state="rrrrrr"/>
         <phase duracion="43" duration="32" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-amorin" offset="24" programID="0" type="static">
+    <tlLogic id="mercedes-amorin" offset="48" programID="0" type="static">
         <phase duration="3" state="ry"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="14" duration="17" state="Gr"/>
+        <phase duracion="21" duration="17" state="Gr"/>
         <phase duration="3" state="yr"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="44" duration="41" state="rG"/>
+        <phase duracion="37" duration="41" state="rG"/>
     </tlLogic>
-    <tlLogic id="mercedes-andes" offset="54" programID="0" type="static">
+    <tlLogic id="mercedes-andes" offset="39" programID="0" type="static">
         <phase duration="3" state="yyrrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="40" duration="26" state="rrGGGG"/>
+        <phase duracion="11" duration="26" state="rrGGGG"/>
         <phase duration="3" state="rryyyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="18" duration="32" state="GGrrrr"/>
+        <phase duracion="47" duration="32" state="GGrrrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-barbato" offset="41" programID="0" type="static">
+    <tlLogic id="mercedes-barbato" offset="52" programID="0" type="static">
         <phase duration="3" state="yyrr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="19" duration="26" state="rrGG"/>
+        <phase duracion="23" duration="26" state="rrGG"/>
         <phase duration="3" state="rryy"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="39" duration="32" state="GGrr"/>
+        <phase duracion="35" duration="32" state="GGrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-convencion" offset="47" programID="0" type="static">
+    <tlLogic id="mercedes-convencion" offset="16" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="45" duration="23" state="rrrrGGG"/>
+        <phase duracion="36" duration="23" state="rrrrGGG"/>
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="13" duration="35" state="GGGGyyy"/>
+        <phase duracion="22" duration="35" state="GGGGyyy"/>
     </tlLogic>
-    <tlLogic id="mercedes-cuareim" offset="15" programID="0" type="static">
+    <tlLogic id="mercedes-cuareim" offset="66" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="32" duration="23" state="rrrrGGGG"/>
+        <phase duracion="35" duration="23" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="26" duration="35" state="GGGGrrrr"/>
+        <phase duracion="23" duration="35" state="GGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-ejido" offset="23" programID="0" type="static">
+    <tlLogic id="mercedes-ejido" offset="54" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="28" duration="26" state="GGGrrr"/>
+        <phase duracion="12" duration="26" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="30" duration="32" state="rrrGGG"/>
+        <phase duracion="46" duration="32" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="mercedes-herreraobes" offset="54" programID="0" type="static">
+    <tlLogic id="mercedes-herreraobes" offset="16" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="38" duration="26" state="rrrrGGGG"/>
+        <phase duracion="28" duration="26" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="20" duration="32" state="GGGGrrrr"/>
+        <phase duracion="30" duration="32" state="GGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-lavalleja" offset="1" programID="0" type="static">
+    <tlLogic id="mercedes-lavalleja" offset="8" programID="0" type="static">
         <phase duration="3" state="rrrrrryyyyyy"/>
         <phase duration="1" state="rrrrrrrrrrrr"/>
-        <phase duracion="10" duration="25" state="GGGGGGrrrrrr"/>
+        <phase duracion="24" duration="25" state="GGGGGGrrrrrr"/>
         <phase duration="3" state="yyyyyyrrrrrr"/>
         <phase duration="2" state="rrrrrrrrrrrr"/>
-        <phase duracion="48" duration="32" state="rrrrrrGGGGGG"/>
+        <phase duracion="34" duration="32" state="rrrrrrGGGGGG"/>
     </tlLogic>
-    <tlLogic id="mercedes-paraguay" offset="18" programID="0" type="static">
+    <tlLogic id="mercedes-paraguay" offset="21" programID="0" type="static">
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="10" duration="29" state="GGGrrrr"/>
+        <phase duracion="40" duration="29" state="GGGrrrr"/>
         <phase duration="3" state="yyyrrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="48" duration="29" state="rrrGGGG"/>
+        <phase duracion="18" duration="29" state="rrrGGGG"/>
     </tlLogic>
-    <tlLogic id="mercedes-riobranco" offset="20" programID="0" type="static">
+    <tlLogic id="mercedes-riobranco" offset="10" programID="0" type="static">
         <phase duration="3" state="rryyyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="33" duration="23" state="GGrrrr"/>
+        <phase duracion="39" duration="23" state="GGrrrr"/>
         <phase duration="3" state="yyrrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="25" duration="35" state="rrGGGG"/>
+        <phase duracion="19" duration="35" state="rrGGGG"/>
     </tlLogic>
-    <tlLogic id="mercedes-rondeau" offset="53" programID="0" type="static">
+    <tlLogic id="mercedes-rondeau" offset="46" programID="0" type="static">
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="25" duration="23" state="GGGrrrr"/>
+        <phase duracion="42" duration="23" state="GGGrrrr"/>
         <phase duration="3" state="yyyrrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="33" duration="35" state="rrrGGGG"/>
+        <phase duracion="16" duration="35" state="rrrGGGG"/>
     </tlLogic>
-    <tlLogic id="mercedes-yaguaron" offset="26" programID="0" type="static">
+    <tlLogic id="mercedes-yaguaron" offset="24" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="40" duration="29" state="rrrrGGGG"/>
+        <phase duracion="47" duration="29" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="18" duration="39" state="GGGGrrrr"/>
+        <phase duracion="11" duration="39" state="GGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="mercedes-yi" offset="62" programID="0" type="static">
+    <tlLogic id="mercedes-yi" offset="4" programID="0" type="static">
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="34" duration="20" state="GGGrrrr"/>
+        <phase duracion="21" duration="20" state="GGGrrrr"/>
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="24" duration="38" state="rrrGGGG"/>
+        <phase duracion="37" duration="38" state="rrrGGGG"/>
     </tlLogic>
-    <tlLogic id="paysandu-ejido" offset="36" programID="0" type="static">
+    <tlLogic id="paysandu-ejido" offset="30" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="17" duration="35" state="GGGrrr"/>
+        <phase duracion="36" duration="35" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="41" duration="23" state="rrrGGG"/>
+        <phase duracion="22" duration="23" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="paysandu-lavalleja" offset="26" programID="0" type="static">
+    <tlLogic id="paysandu-lavalleja" offset="24" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="17" duration="35" state="GGGrrr"/>
+        <phase duracion="43" duration="35" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="41" duration="23" state="rrrGGG"/>
+        <phase duracion="15" duration="23" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="paysandu-paraguay" offset="42" programID="0" type="static">
+    <tlLogic id="paysandu-paraguay" offset="53" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="28" duration="26" state="rrrGGG"/>
+        <phase duracion="34" duration="26" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="30" duration="32" state="GGGrrr"/>
+        <phase duracion="24" duration="32" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="paysandu-riobranco" offset="31" programID="0" type="static">
+    <tlLogic id="paysandu-riobranco" offset="32" programID="0" type="static">
         <phase duration="3" state="rryyy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="14" duration="26" state="GGrrr"/>
+        <phase duracion="33" duration="26" state="GGrrr"/>
         <phase duration="3" state="yyrrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="44" duration="32" state="rrGGG"/>
+        <phase duracion="25" duration="32" state="rrGGG"/>
     </tlLogic>
-    <tlLogic id="paysandu-rondeau" offset="54" programID="0" type="static">
+    <tlLogic id="paysandu-rondeau" offset="41" programID="0" type="static">
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="22" duration="26" state="GGGrrr"/>
+        <phase duracion="17" duration="26" state="GGGrrr"/>
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="36" duration="32" state="rrrGGG"/>
+        <phase duracion="41" duration="32" state="rrrGGG"/>
     </tlLogic>
-    <tlLogic id="paysandu-yaguaron" offset="4" programID="0" type="static">
+    <tlLogic id="paysandu-yaguaron" offset="16" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="25" duration="26" state="rrrGGG"/>
+        <phase duracion="15" duration="26" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="33" duration="32" state="GGGrrr"/>
+        <phase duracion="43" duration="32" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="sanajose-ejido" offset="61" programID="0" type="static">
+    <tlLogic id="sanajose-ejido" offset="64" programID="0" type="static">
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="19" duration="26" state="GGGGrrr"/>
+        <phase duracion="44" duration="26" state="GGGGrrr"/>
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="39" duration="32" state="rrrrGGG"/>
+        <phase duracion="14" duration="32" state="rrrrGGG"/>
     </tlLogic>
-    <tlLogic id="sanjose-andes" offset="45" programID="0" type="static">
+    <tlLogic id="sanjose-andes" offset="47" programID="0" type="static">
         <phase duration="3" state="yyyr"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="21" duration="26" state="rrrG"/>
+        <phase duracion="27" duration="26" state="rrrG"/>
         <phase duration="3" state="rrry"/>
         <phase duration="1" state="rrrr"/>
-        <phase duracion="37" duration="32" state="GGGr"/>
+        <phase duracion="31" duration="32" state="GGGr"/>
     </tlLogic>
-    <tlLogic id="sanjose-convencion" offset="9" programID="0" type="static">
+    <tlLogic id="sanjose-convencion" offset="56" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="13" duration="26" state="rrrrGGG"/>
+        <phase duracion="47" duration="26" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="45" duration="32" state="GgGGrrr"/>
+        <phase duracion="11" duration="32" state="GgGGrrr"/>
     </tlLogic>
-    <tlLogic id="sanjose-cuareim" offset="64" programID="0" type="static">
+    <tlLogic id="sanjose-cuareim" offset="4" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="35" duration="20" state="rrrrGGG"/>
+        <phase duracion="38" duration="20" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="23" duration="38" state="GGGGrrr"/>
+        <phase duracion="20" duration="38" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="sanjose-gutierrez" offset="56" programID="0" type="static">
+    <tlLogic id="sanjose-gutierrez" offset="12" programID="0" type="static">
         <phase duration="3" state="rryyy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="32" duration="20" state="GGrrr"/>
+        <phase duracion="40" duration="20" state="GGrrr"/>
         <phase duration="3" state="yyrrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="26" duration="38" state="rrGGG"/>
+        <phase duracion="18" duration="38" state="rrGGG"/>
     </tlLogic>
-    <tlLogic id="sanjose-herrerayobes" offset="45" programID="0" type="static">
+    <tlLogic id="sanjose-herrerayobes" offset="36" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="13" duration="23" state="rrrrGGG"/>
+        <phase duracion="10" duration="23" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="45" duration="35" state="GGGGrrr"/>
+        <phase duracion="48" duration="35" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="sanjose-paraguay" offset="12" programID="0" type="static">
+    <tlLogic id="sanjose-paraguay" offset="48" programID="0" type="static">
         <phase duration="3" state="rrrryyyyy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="13" duration="26" state="GGGGrrrrr"/>
+        <phase duracion="47" duration="26" state="GGGGrrrrr"/>
         <phase duration="3" state="yyyyrrrrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="45" duration="32" state="rrrrGGGGG"/>
+        <phase duracion="11" duration="32" state="rrrrGGGGG"/>
     </tlLogic>
-    <tlLogic id="sanjose-riobranco" offset="43" programID="0" type="static">
+    <tlLogic id="sanjose-riobranco" offset="12" programID="0" type="static">
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="34" duration="23" state="GGGrrrr"/>
+        <phase duracion="31" duration="23" state="GGGrrrr"/>
         <phase duration="3" state="yyyrrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="24" duration="35" state="rrrGGGG"/>
+        <phase duracion="27" duration="35" state="rrrGGGG"/>
     </tlLogic>
-    <tlLogic id="sanjose-rionegro" offset="63" programID="0" type="static">
+    <tlLogic id="sanjose-rionegro" offset="56" programID="0" type="static">
         <phase duration="3" state="yyyyyrrrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="20" duration="23" state="rrrrrGGGG"/>
+        <phase duracion="22" duration="23" state="rrrrrGGGG"/>
         <phase duration="3" state="rrrrryyyy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="38" duration="35" state="GGGGGrrrr"/>
+        <phase duracion="36" duration="35" state="GGGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="sanjose-yaguaron" offset="58" programID="0" type="static">
+    <tlLogic id="sanjose-yaguaron" offset="38" programID="0" type="static">
         <phase duration="3" state="yyyyyrrrr"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="12" duration="26" state="rrrrrGGGG"/>
+        <phase duracion="48" duration="26" state="rrrrrGGGG"/>
         <phase duration="3" state="rrrrryyyy"/>
         <phase duration="1" state="rrrrrrrrr"/>
-        <phase duracion="46" duration="32" state="GGGGGrrrr"/>
+        <phase duracion="10" duration="32" state="GGGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="sanjose-yi" offset="41" programID="0" type="static">
+    <tlLogic id="sanjose-yi" offset="11" programID="0" type="static">
         <phase duration="3" state="rrryyyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="25" duration="23" state="GGGrrrr"/>
+        <phase duracion="10" duration="23" state="GGGrrrr"/>
         <phase duration="3" state="yyyrrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="33" duration="35" state="rrrGGGG"/>
+        <phase duracion="48" duration="35" state="rrrGGGG"/>
     </tlLogic>
-    <tlLogic id="soriano-andes" offset="23" programID="0" type="static">
+    <tlLogic id="soriano-andes" offset="41" programID="0" type="static">
         <phase duration="3" state="yr"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="47" duration="20" state="rG"/>
+        <phase duracion="15" duration="20" state="rG"/>
         <phase duration="3" state="ry"/>
         <phase duration="1" state="rr"/>
-        <phase duracion="11" duration="38" state="Gr"/>
+        <phase duracion="43" duration="38" state="Gr"/>
     </tlLogic>
-    <tlLogic id="soriano-chile" offset="54" programID="0" type="static">
+    <tlLogic id="soriano-chile" offset="13" programID="0" type="static">
         <phase duration="3" state="yyr"/>
         <phase duration="1" state="rrr"/>
-        <phase duracion="41" duration="23" state="rrG"/>
+        <phase duracion="29" duration="23" state="rrG"/>
         <phase duration="3" state="rry"/>
         <phase duration="1" state="rrr"/>
-        <phase duracion="17" duration="35" state="GGr"/>
+        <phase duracion="29" duration="35" state="GGr"/>
     </tlLogic>
-    <tlLogic id="soriano-convencion" offset="49" programID="0" type="static">
+    <tlLogic id="soriano-convencion" offset="36" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="16" duration="23" state="rrrGG"/>
+        <phase duracion="36" duration="23" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="42" duration="35" state="GGGrr"/>
+        <phase duracion="22" duration="35" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="soriano-cuareim" offset="3" programID="0" type="static">
+    <tlLogic id="soriano-cuareim" offset="10" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="10" duration="29" state="rrrGG"/>
+        <phase duracion="26" duration="29" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="48" duration="39" state="GGGrr"/>
+        <phase duracion="32" duration="39" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="soriano-ejido" offset="51" programID="0" type="static">
+    <tlLogic id="soriano-ejido" offset="45" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="41" duration="29" state="rrrGGG"/>
+        <phase duracion="12" duration="29" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="17" duration="39" state="GGGrrr"/>
+        <phase duracion="46" duration="39" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="soriano-gutierrez" offset="22" programID="0" type="static">
+    <tlLogic id="soriano-gutierrez" offset="6" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="30" duration="23" state="rrrGG"/>
+        <phase duracion="40" duration="23" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="28" duration="35" state="GGGrr"/>
+        <phase duracion="18" duration="35" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="soriano-herrerayobes" offset="9" programID="0" type="static">
+    <tlLogic id="soriano-herrerayobes" offset="29" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="34" duration="23" state="rrrGG"/>
+        <phase duracion="31" duration="23" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="24" duration="35" state="GGGrr"/>
+        <phase duracion="27" duration="35" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="soriano-paraguay" offset="66" programID="0" type="static">
+    <tlLogic id="soriano-paraguay" offset="22" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="10" duration="29" state="rrrGGG"/>
+        <phase duracion="40" duration="29" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="48" duration="29" state="GGGrrr"/>
+        <phase duracion="18" duration="29" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="soriano-riobranco" offset="17" programID="0" type="static">
+    <tlLogic id="soriano-riobranco" offset="49" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="15" duration="29" state="rrrGG"/>
+        <phase duracion="38" duration="29" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="43" duration="29" state="GGGrr"/>
+        <phase duracion="20" duration="29" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="soriano-rionegro" offset="64" programID="0" type="static">
+    <tlLogic id="soriano-rionegro" offset="3" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="14" duration="23" state="rrrGGG"/>
+        <phase duracion="19" duration="23" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="44" duration="35" state="GGGrrr"/>
+        <phase duracion="39" duration="35" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="soriano-yaguaron" offset="39" programID="0" type="static">
+    <tlLogic id="soriano-yaguaron" offset="61" programID="0" type="static">
         <phase duration="3" state="yyyrrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="23" duration="29" state="rrrGGG"/>
+        <phase duracion="19" duration="29" state="rrrGGG"/>
         <phase duration="3" state="rrryyy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="35" duration="29" state="GGGrrr"/>
+        <phase duracion="39" duration="29" state="GGGrrr"/>
     </tlLogic>
-    <tlLogic id="soriano-yi" offset="25" programID="0" type="static">
+    <tlLogic id="soriano-yi" offset="44" programID="0" type="static">
         <phase duration="3" state="yyyrr"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="41" duration="29" state="rrrGG"/>
+        <phase duracion="29" duration="29" state="rrrGG"/>
         <phase duration="3" state="rrryy"/>
         <phase duration="1" state="rrrrr"/>
-        <phase duracion="17" duration="29" state="GGGrr"/>
+        <phase duracion="29" duration="29" state="GGGrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-andes" offset="8" programID="0" type="static">
+    <tlLogic id="uruguay-andes" offset="18" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="18" duration="17" state="rrrrGGG"/>
+        <phase duracion="13" duration="17" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="40" duration="41" state="GGGGrrr"/>
+        <phase duracion="45" duration="41" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-cuareim" offset="60" programID="0" type="static">
+    <tlLogic id="uruguay-cuareim" offset="24" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="31" duration="17" state="rrrrGGG"/>
+        <phase duracion="48" duration="17" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="27" duration="41" state="GGGGrrr"/>
+        <phase duracion="10" duration="41" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-ejido" offset="35" programID="0" type="static">
+    <tlLogic id="uruguay-ejido" offset="53" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="14" duration="35" state="rrrrGGGG"/>
+        <phase duracion="31" duration="35" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="44" duration="23" state="GGGGrrrr"/>
+        <phase duracion="27" duration="23" state="GGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-florida" offset="16" programID="0" type="static">
+    <tlLogic id="uruguay-florida" offset="48" programID="0" type="static">
         <phase duration="3" state="yyyyrr"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="43" duration="17" state="rrrrGG"/>
+        <phase duracion="31" duration="17" state="rrrrGG"/>
         <phase duration="3" state="rrrryy"/>
         <phase duration="1" state="rrrrrr"/>
-        <phase duracion="15" duration="41" state="GGGGrr"/>
+        <phase duracion="27" duration="41" state="GGGGrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-lavalleja" offset="15" programID="0" type="static">
+    <tlLogic id="uruguay-lavalleja" offset="48" programID="0" type="static">
         <phase duration="3" state="rrrrryyyyy"/>
         <phase duration="1" state="rrrrrrrrrr"/>
-        <phase duracion="14" duration="23" state="GGGGGrrrrr"/>
+        <phase duracion="40" duration="23" state="GGGGGrrrrr"/>
         <phase duration="3" state="yyyyyrrrrr"/>
         <phase duration="1" state="rrrrrrrrrr"/>
-        <phase duracion="44" duration="35" state="rrrrrGGGGG"/>
+        <phase duracion="18" duration="35" state="rrrrrGGGGG"/>
     </tlLogic>
-    <tlLogic id="uruguay-riobranco" offset="19" programID="0" type="static">
+    <tlLogic id="uruguay-riobranco" offset="46" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="23" duration="23" state="rrrrGGG"/>
+        <phase duracion="10" duration="23" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="35" duration="35" state="GGGGrrr"/>
+        <phase duracion="48" duration="35" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-rondeau" offset="10" programID="0" type="static">
+    <tlLogic id="uruguay-rondeau" offset="60" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="46" duration="20" state="rrrrGGGG"/>
+        <phase duracion="37" duration="20" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="12" duration="38" state="GGGGrrrr"/>
+        <phase duracion="21" duration="38" state="GGGGrrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-yaguaron" offset="3" programID="0" type="static">
+    <tlLogic id="uruguay-yaguaron" offset="52" programID="0" type="static">
         <phase duration="3" state="yyyyrrr"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="41" duration="32" state="rrrrGGG"/>
+        <phase duracion="11" duration="32" state="rrrrGGG"/>
         <phase duration="3" state="rrrryyy"/>
         <phase duration="1" state="rrrrrrr"/>
-        <phase duracion="17" duration="26" state="GGGGrrr"/>
+        <phase duracion="47" duration="26" state="GGGGrrr"/>
     </tlLogic>
-    <tlLogic id="uruguay-yi" offset="7" programID="0" type="static">
+    <tlLogic id="uruguay-yi" offset="36" programID="0" type="static">
         <phase duration="3" state="yyyyrrrr"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="38" duration="20" state="rrrrGGGG"/>
+        <phase duracion="28" duration="20" state="rrrrGGGG"/>
         <phase duration="3" state="rrrryyyy"/>
         <phase duration="1" state="rrrrrrrr"/>
-        <phase duracion="20" duration="38" state="GGGGrrrr"/>
+        <phase duracion="30" duration="38" state="GGGGrrrr"/>
     </tlLogic>
 
     <junction id="10259492932" incLanes="1121698181_0 1121698181_1" intLanes="" shape="573474.03,-3862195.21 573468.71,-3862198.79" type="dead_end" x="573471.37" y="-3862197.00"/>

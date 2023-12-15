@@ -32,24 +32,37 @@ public class GeneticAlgorithm implements Algorithm<IntegerSolution>{
 		System.out.println("VELOCIDADES DE GENERACION");
 		System.out.println();
 		List<IntegerSolution> currentPopulation = this.initialPopulation;
+		
 		for(int i=0; i < this.maxGenerations;i++) {
+			//System.out.println("Current: "+currentPopulation.size());
 			List<IntegerSolution> poblacionRankeada = evaluarPoblacion(currentPopulation);
 			List<IntegerSolution> offspringPopulation = new  ArrayList<>();
-			for(int j = 0; i  < (poblacionRankeada.size()/ 2); j++) {//Se elije la mejor mitad de los padres
+			int si = poblacionRankeada.size()/2;
+			System.out.println("cant variables: "+ poblacionRankeada.get(0).getNumberOfVariables());
+			if(si%2 ==0) {
+				si--;
+			}
+			System.out.println("pob rankeada: " + poblacionRankeada.size());
+			for(int j = 0; j  < si; j++) {//Se elije la mejor mitad de los padres
+				//System.out.println("CEIL: "+(int) Math.ceil(poblacionRankeada.size()/ 2));
 				List<IntegerSolution> parents = Arrays.asList(currentPopulation.get(j), currentPopulation.get(j+1));
 				List<IntegerSolution> children = this.crossover.execute(parents);
 				offspringPopulation.addAll(children);
 			}
+			//System.out.println("Cruzamiento 1 OFFSPRING: "+offspringPopulation.size());
+			//System.out.println(currentPopulation.size());
 			List<IntegerSolution> p1 = Arrays.asList(currentPopulation.get(0), currentPopulation.get(2));
 			List<IntegerSolution> ch1 = this.crossover.execute(p1);
-			List<IntegerSolution> p2 = Arrays.asList(currentPopulation.get(1), currentPopulation.get(3));
-			List<IntegerSolution> ch2 = this.crossover.execute(p2);
+			//List<IntegerSolution> p2 = Arrays.asList(currentPopulation.get(1), currentPopulation.get(3));
+			//List<IntegerSolution> ch2 = this.crossover.execute(p2);
 			offspringPopulation.addAll(ch1);
-			offspringPopulation.addAll(ch2);
+			//System.out.println("Cruzamiento 2 OFFSPRING: "+offspringPopulation.size());
+			//offspringPopulation.addAll(ch2);
 			
 			for(IntegerSolution s : offspringPopulation) {
 				this.mutation.execute(s);
 			}
+			//System.out.println("Mutacion OFFSPRING: "+offspringPopulation.size());
 			System.out.println("Mejor velocidad de esta Generacion: "+poblacionRankeada.get(0).getObjective(0));
 			System.out.println();
 			currentPopulation = offspringPopulation;
@@ -75,6 +88,7 @@ public class GeneticAlgorithm implements Algorithm<IntegerSolution>{
         Map<IntegerSolution, Double> ranks = new HashMap<>();
 
         // Calcular la velocidad promedio de cada solución y almacenarla en el mapa
+        
         for (IntegerSolution s : currentPopulation) {
             problem.evaluate(s);
 

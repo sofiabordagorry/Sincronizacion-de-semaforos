@@ -11,7 +11,7 @@ import org.uma.jmetal.solution.integersolution.impl.DefaultIntegerSolution;
 
 public class JMetalSUMOIntegration {
     public static void main(String[] args) {
-        int maxGenerations = 5;
+        int maxGenerations = 10;
         double crossProbability = 0.5;
         double mutationProbability = 0.01;
         int perturbation = 1;
@@ -32,11 +32,12 @@ public class JMetalSUMOIntegration {
             e.printStackTrace();
         }
         
-        SemaforosProblem problem = new SemaforosProblem(100, sumaSemaforos, 66);
+        SemaforosProblem problem = new SemaforosProblem(cantSemaforos, sumaSemaforos, 66);
         List<Semaforo> semaforosList = new ArrayList<>(); // Cambio a List<Semaforo>
 
         try (BufferedReader br = new BufferedReader(new FileReader("archivo_generado.txt"))) {
             String line;
+
             while ((line = br.readLine()) != null) {
                 String[] parts = line.split(";");
                 String id = parts[0];
@@ -64,11 +65,9 @@ public class JMetalSUMOIntegration {
         
         int i = 0;
         IntegerSolution tfSolution = null;
+        //System.out.println(semaforosList.size());
         for(Semaforo s : semaforosList) {
-        	if(i%100 == 0) {
-        		if(i==100) {
-        			initialPopulation.add(tfSolution);
-        		}
+        	if(i%cantSemaforos == 0) {
         		tfSolution = new DefaultIntegerSolution(boundsList,1, 0);
         		//System.out.println("Numero de variables:" + tfSolution.getNumberOfVariables());
         		i=0;
@@ -79,8 +78,11 @@ public class JMetalSUMOIntegration {
         	}
         	tfSolution.setVariable((i*3)+2, s.getOffset());
         	i++;
+    		if(i==cantSemaforos) {
+    			initialPopulation.add(tfSolution);
+    		}
         }
-        
+        System.out.println(initialPopulation.size());
         Algorithm<IntegerSolution> algorithm = new GeneticAlgorithm(
         		problem,
                 initialPopulation,
