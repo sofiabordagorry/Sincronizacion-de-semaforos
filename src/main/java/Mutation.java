@@ -48,18 +48,17 @@ public class Mutation implements MutationOperator<IntegerSolution> {
     }
     
     public int getNumberOfRequiredParents() {
-        return 1; // Indicar cuántos padres necesita el operador de mutación
+        return 1;
     }
 
 
     public int getNumberOfGeneratedChildren() {
-        return 1; // Indicar cuántos hijos genera el operador de mutación
+        return 1; 
     }
 
     @Override
     public double getMutationProbability() {
-        // TODO Auto-generated method stub
-        return 0;
+        return this.mutationProbability;
     }
 
     public List<Pair<Integer,Integer>> getBounds() {

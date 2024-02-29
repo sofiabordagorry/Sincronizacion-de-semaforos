@@ -11,16 +11,16 @@ import org.uma.jmetal.solution.integersolution.impl.DefaultIntegerSolution;
 
 public class JMetalSUMOIntegration {
     public static void main(String[] args) {
-        int maxGenerations = 10;
-        double crossProbability = 0.5;
-        double mutationProbability = 0.01;
+        int maxGenerations = 30;
+        double crossProbability = 0.75;
+        double mutationProbability = 0.08;
         int perturbation = 1;
         int cantSemaforos = 100;
 
         List<IntegerSolution> initialPopulation = new ArrayList<>();
         int[] sumaSemaforos = new int[cantSemaforos];
         
-        try (BufferedReader br = new BufferedReader(new FileReader("semaforos2fases.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("semaforos.txt"))) {
             String line;
             int i = 0;
             while ((line = br.readLine()) != null) {
@@ -30,12 +30,12 @@ public class JMetalSUMOIntegration {
             }
         } catch (IOException e) {
             e.printStackTrace();
-        }
+        } 
         
         SemaforosProblem problem = new SemaforosProblem(cantSemaforos, sumaSemaforos, 66);
-        List<Semaforo> semaforosList = new ArrayList<>(); // Cambio a List<Semaforo>
+        List<Semaforo> semaforosList = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("archivo_generado.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("soluciones.txt"))) {
             String line;
 
             while ((line = br.readLine()) != null) {
@@ -62,14 +62,11 @@ public class JMetalSUMOIntegration {
         	boundsList.add(Pair.of(0, 66));
         }
         
-        
         int i = 0;
         IntegerSolution tfSolution = null;
-        //System.out.println(semaforosList.size());
         for(Semaforo s : semaforosList) {
         	if(i%cantSemaforos == 0) {
         		tfSolution = new DefaultIntegerSolution(boundsList,1, 0);
-        		//System.out.println("Numero de variables:" + tfSolution.getNumberOfVariables());
         		i=0;
         	}
         	int[] fasesSemaforo = s.getFases();
@@ -82,7 +79,6 @@ public class JMetalSUMOIntegration {
     			initialPopulation.add(tfSolution);
     		}
         }
-        System.out.println(initialPopulation.size());
         Algorithm<IntegerSolution> algorithm = new GeneticAlgorithm(
         		problem,
                 initialPopulation,
@@ -92,20 +88,6 @@ public class JMetalSUMOIntegration {
                 perturbation
         );
         algorithm.run();
-        IntegerSolution bestSolution = algorithm.getResult();
-        //System.out.println("La mejor Velocidad:" + bestSolution.getObjective(0));
-//        System.out.println("La mejor solucion obnetida es: ");
-//        TrafficLightsProblem trafficLightsBS = (TrafficLightsProblem) bestSolution;
-//        Semaforo[] semaforosBS = trafficLightsBS.getPhasesAndOffsets();
-//        for(Semaforo s : semaforosBS) {
-//        	System.out.println(s.getId());
-//        	System.out.println(s.getOffset());
-//        	int[] fases = s.getFases();
-//        	for(int j : fases) {
-//        		System.out.println("-FASE "+j+" QUE TIENE VERDE:"+fases[j]);
-//        	}
-//        	System.out.println("---------------------------");
-//        }
     }
 
 }

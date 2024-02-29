@@ -16,7 +16,6 @@ import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
-import org.apache.commons.collections4.Transformer;
 import org.uma.jmetal.problem.integerproblem.impl.AbstractIntegerProblem;
 import org.uma.jmetal.solution.integersolution.IntegerSolution;
 import org.w3c.dom.Document;
@@ -44,9 +43,9 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 			int numSemaforo = i / 3;
             // Restricción para las dos variables de fases (variables i e i+1)
             lowerBounds.add(0);
-            upperBounds.add(sumaSemaforo[numSemaforo]); // Suma de fases no puede exceder valorX
+            upperBounds.add(sumaSemaforo[numSemaforo]); 
             lowerBounds.add(0);
-            upperBounds.add(sumaSemaforo[numSemaforo]); // Suma de fases no puede exceder valorX
+            upperBounds.add(sumaSemaforo[numSemaforo]); 
 
             // Restricción para el offset (variable i + 2)
             lowerBounds.add(0);
@@ -59,11 +58,8 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 	@Override
 	public void evaluate(IntegerSolution solution) {
 		Integer[] TFSolution = solution.getVariables().toArray(new Integer[0]);
-//		for(int k = 0;k<TFSolution.length;k++) {
-//			System.out.println(TFSolution[k]);
-//		}
 		try {
-			File inputFile = new File("E:\\Facultad\\2023\\Segundo Semestre\\Algoritmos Evolutivos\\LaboratiorioAEUltimoIntento\\Sincronizacion-de-semaforos-main\\RED-simulacionProbada-2fases.net.xml");
+			File inputFile = new File("instancia.net.xml");
         	DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
         	DocumentBuilder dBuilder;
         	Document doc;
@@ -72,15 +68,12 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 				doc = dBuilder.parse(inputFile);        		
 	        	doc.getDocumentElement().normalize();
 	        	NodeList semaforosList = doc.getElementsByTagName("tlLogic");
-	        	//System.out.println("cant semaforos:"+semaforosList.getLength());
 	        	for (int i = 0; i < semaforosList.getLength(); i++) {
 	        		Node semaforo = semaforosList.item(i);
 	        		if(semaforo.getNodeType() == Node.ELEMENT_NODE) {
 	        			Element elemSemaforo = (Element) semaforo;
 	        			elemSemaforo.setAttribute("offset", String.valueOf(TFSolution[(3*i)+2]));
-	        			//System.out.println(i+"-"+String.valueOf(TFSolution[(3*i)+2]));
 	        			NodeList fasesList = elemSemaforo.getElementsByTagName("phase");
-	        			//System.out.println(i+"-"+fasesList.getLength());
 	        			int h = 0;
 	        			for(int j = 0; j < fasesList.getLength(); j++) {
 	        				if(h == 2) {
@@ -90,7 +83,6 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 	        				String estadoFase = fase.getAttribute("state");
 	        				if(estadoFase.contains("G")) {
 	        					fase.setAttribute("duracion", String.valueOf(TFSolution[(3*i)+h]));
-	        					//System.out.println(String.valueOf(TFSolution[(3*i)+h]));
 	        					h++;
 	        				}
 	        			}
@@ -99,7 +91,7 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 	            TransformerFactory transformerFactory = TransformerFactory.newInstance();
 	            javax.xml.transform.Transformer transformer = transformerFactory.newTransformer();
 	            DOMSource source = new DOMSource(doc);
-	            StreamResult result = new StreamResult(new File("E:\\Facultad\\2023\\Segundo Semestre\\Algoritmos Evolutivos\\LaboratiorioAEUltimoIntento\\Sincronizacion-de-semaforos-main\\RED-simulacionProbada-2fases.net.xml"));
+	            StreamResult result = new StreamResult(new File("instancia.net.xml"));
 	            transformer.transform(source, result);
 	            
 			} catch (ParserConfigurationException | SAXException e) {
@@ -107,28 +99,24 @@ public class SemaforosProblem extends AbstractIntegerProblem{
 			}catch(TransformerException e) {
 				e.printStackTrace();
 			}
-            ProcessBuilder processBuilder = new ProcessBuilder("python", "E:\\Facultad\\2023\\Segundo Semestre\\Algoritmos Evolutivos\\LaboratiorioAEUltimoIntento\\Sincronizacion-de-semaforos-main\\velocidadPromedio.py");
+            ProcessBuilder processBuilder = new ProcessBuilder("python", "velocidadPromedio.py");
             processBuilder.redirectOutput(new File("output.txt"));
             Process process = processBuilder.start();
-            process.waitFor(); // Espera a que termine el proceso
+            process.waitFor();
 
-            // Leer el archivo de salida para obtener la velocidad promedio
+            //Leer el archivo de salida para obtener la velocidad promedio
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
             StringBuilder output = new StringBuilder();
             while ((line = reader.readLine()) != null) {
                 output.append(line).append("\n");
             }
-            String resultado = output.toString();
             double velocidadPromedio = 0.0;
-            //System.out.println(resultado);
             try {
-                FileReader fileReader = new FileReader("E:\\Facultad\\2023\\Segundo Semestre\\Algoritmos Evolutivos\\LaboratiorioAEUltimoIntento\\Sincronizacion-de-semaforos-main\\output.txt");
+                FileReader fileReader = new FileReader("output.txt");
                 BufferedReader bufferedReader = new BufferedReader(fileReader);
                 String line2;
-
                 while ((line2 = bufferedReader.readLine()) != null) {
-                    // Buscar la frase específica
                     if (line2.contains("La velocidad promedio es: ")) {
                         String numeroDespuesDeFrase = line2.substring(line2.indexOf("La velocidad promedio es: ") + "La velocidad promedio es: ".length());
                         
@@ -138,7 +126,6 @@ public class SemaforosProblem extends AbstractIntegerProblem{
                         if (matcher.find()) {
                             numeroDespuesDeFrase = matcher.group();
                             velocidadPromedio = Double.parseDouble(numeroDespuesDeFrase);
-                            System.out.println("La velocidad promedio es: " + velocidadPromedio);
                         } else {
                             System.out.println("No se encontró un número después de la frase.");
                         }

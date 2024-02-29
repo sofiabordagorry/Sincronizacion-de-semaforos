@@ -17,12 +17,12 @@ public class SinglePointCrossover implements CrossoverOperator<IntegerSolution> 
 
     @Override
     public int getNumberOfRequiredParents() {
-        return 2; // Necesita 2 padres para el cruzamiento
+        return 2; 
     }
 
     @Override
     public int getNumberOfGeneratedChildren() {
-        return 2; // Genera 2 hijos
+        return 2; 
     }
 
 	@Override
